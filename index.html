@@ -55,6 +55,10 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#structure">Structure</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-cases">Test Cases</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -108,6 +112,120 @@
 <p>To carry out unit testing, run the following code below to run all the unit tests associated with this project</p>
 <pre><code class="language-bash">python3 -m unittest discover -s tests
 </code></pre>
+<h2 id="structure">Structure</h2>
+<p>The project is divided into modules to allow scaling and extensive improvement with time. The file structure is represented below</p>
+<pre><code>project
+│ 
+│   README.md
+│   index.py    
+│
+└────── Plateau/
+│       __init__.py
+│       plateau.py
+│ 
+│────── Rover/ 
+│       __init__.py
+│       rover.py
+│ 
+│────── middleware/    
+│      __init__.py
+│      middleware.py
+│ 
+│────── tests/        
+       __init__.py
+       test_middleware.py
+       test_plateau.py
+       test_rover.py
+
+</code></pre>
+<h2 id="test-cases">Test Cases</h2>
+<p>The table below shows the various test cases and the required outcomes</p>
+<table>
+<thead>
+<tr>
+<th align="left">No.</th>
+<th align="center">Test</th>
+<th align="right">Expected result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="center">test_rover_is_not_within_perimeter</td>
+<td align="right">Pass</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="center">test_rover_is_within_perimeter</td>
+<td align="right">Fail</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="center">test_rover_x_is_not_within_perimeter</td>
+<td align="right">Pass</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="center">test_rover_x_is_within_perimeter</td>
+<td align="right">Fail</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="center">test_rover_x_is_landing_on_rover</td>
+<td align="right">Pass</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="center">test_rover_x_is_not_landing_on_rover</td>
+<td align="right">Fail</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="center">test_rover_is_making_invalid_movements</td>
+<td align="right">Pass</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="center">test_rover_is_making_valid_movements</td>
+<td align="right">Fail</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="center">test_rover_x_is_making_invalid_movement</td>
+<td align="right">Pass</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="center">test_rover_x_is_making_valid_movement</td>
+<td align="right">Fail</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="center">test_plateau_creation</td>
+<td align="right">Pass</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="center">test_rover_creation</td>
+<td align="right">Pass</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="center">test_setLeft_function</td>
+<td align="right">Pass</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="center">test_setRight_function</td>
+<td align="right">Pass</td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="center">test_moveForward_function</td>
+<td align="right">Pass</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
@@ -157,5 +275,5 @@
 
 <!--
 MkDocs version : 1.2.3
-Build Date UTC : 2022-01-28 00:37:34.743663+00:00
+Build Date UTC : 2022-01-28 01:52:07.913439+00:00
 -->
