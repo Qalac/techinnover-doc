@@ -1,0 +1,5 @@
+site_name: Techinnover Tech-test Docs
+nav:
+    - Home: index.md
+theme: readthedocs
+repo_url: https://github.com/Qalac/techinnover-doc.git
